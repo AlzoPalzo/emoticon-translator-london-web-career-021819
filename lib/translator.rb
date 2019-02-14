@@ -18,7 +18,7 @@ def get_japanese_emoticon(path, emoticon)
   if library["get_emoticon"].has_key(emoticon)
     library["get_emoticon"][emoticon]
   else
-    "Sorry, that emoticon was not found"    
+    "Sorry, that emoticon was not found"
   end
 end
 
