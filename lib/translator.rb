@@ -2,9 +2,9 @@
 require 'yaml'
 
 def load_library(path)
-  library = YAML.load_file(path)
+  library = YAML.load_file(path) #load hash from yaml file
 
-  new_lib = {"get_meaning" => {}, "get_emoticon" => {}}
+  new_lib = {"get_meaning" => {}, "get_emoticon" => {}} #new library reformat yaml file
 
   library.each do |meaning, emoticons|
     new_lib["get_meaning"][emoticons[1]] = meaning
